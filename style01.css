@@ -117,13 +117,19 @@ h1 {
     margin-left: 0;
 }
 
-label {
+.label {
+    display: block;
     color: #1D2C3C;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 6px;
+}
+
+.input-group {
+    margin-bottom: 10px; /* Adjust the margin between input groups */
 }
 
 input {
@@ -136,7 +142,6 @@ input {
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #E0E6EA;
-    margin-bottom: 10px; /* Adjust the margin as needed */
 }
 
 /* Placeholder styling */
@@ -155,7 +160,7 @@ hr {
     flex-shrink: 0;
     background: #F5F7FA;
     border: none;
-    margin: 0-20px; /* To remove any default margin */
+    margin: 0 20px; /* To remove any default margin */
 }
 
 .form-section {
@@ -163,39 +168,165 @@ hr {
     flex-direction: column; /* Stack elements vertically */
 }
 
-label {
-    display: block;
-    color: #1D2C3C;
+/* "Don’t hesitate to contact support!" Typography */
+.help-section p {
+    color: #646E7A;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 6px;
+    letter-spacing: -0.01px;
 }
 
-.input-group {
-    margin-bottom: 10px; /* Adjust the margin between input groups */
-}
-
-label {
-    display: block; /* Make labels block-level to stack them vertically */
-    color: #1D2C3C;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-input {
-    width: 226px;
-    height: 36px;
+/* Small Image Layout */
+.help-section img {
+    width: 92px;
+    height: 20.101px;
     flex-shrink: 0;
-    border-radius: 4px;
-    background: #EDEFF2;
-    color: #1D2C3C; /* Adjust the text color as needed */
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #E0E6EA;
+    margin-left: 10%;
+}
+
+/* Center image and text within the button */
+.help-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.help-section img,
+.help-section p {
+    margin-bottom: 10px; /* Adjust margin between image and text */
+}
+
+/* button styles */
+.buy-button {
+    width: 483px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #038E7D;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background: #027567;
+}
+
+/* Blue Box Section */
+.blue-box {
+    width: 312px;
+    height: 795px;
+    flex-shrink: 0;
+    border-radius: 0px 6px 6px 0px;
+    background: #1179BF;
+    margin-left: 20px; /* Adjust margin as needed to create space between the form and the blue box */
+}
+
+/* Blue Box Content */
+.blue-box .box-content {
+    padding: 20px;
+    color: #FFF; /* Text color in the blue box */
+}
+
+/* Blue Box Text Styles */
+#box-text1, #box-text2, #box-text3, #box-text4, #box-text5, #box-text6, #box-text7 {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+
+#box-text1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.01px;
+}
+
+#box-text2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.015px;
+}
+
+#box-text3, #box-text4 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.008px;
+}
+
+#box-text5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.008px;
+}
+
+#box-text6 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.008px;
+}
+
+#box-text7 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.009px;
+}
+
+/* Blue Box Testimonial */
+.blue-box .testimonial {
+    margin-top: 20px;
+}
+
+/* Blue Box Image */
+.blue-box img {
+    width: 50px; /* Adjust image width as needed */
+    height: 50px; /* Adjust image height as needed */
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Blue Box Check Mark */
+.check-mark {
+    color: #1179BF;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Spacing Between Boxes */
+#box-text1 + #box-text2 {
+    margin-top: 10px;
+}
+
+#box-text2 + #box-text3 {
+    margin-top: 8px;
+}
+
+#box-text3 + #box-text4 {
+    margin-top: 180px;
+}
+
+#box-text4 + #box-text5 {
+    margin-top: 10px;
+}
+
+#box-text5 + #box-text6 {
+    margin-top: 90px;
+}
+
+#box-text6 + #box-text7 {
+    margin-top: 30px;
 }
